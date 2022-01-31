@@ -7,7 +7,7 @@
 #
 # Host: 127.0.0.01 (MySQL 5.7.36)
 # Database: verse
-# Generation Time: 2022-01-31 20:03:25 +0000
+# Generation Time: 2022-01-31 22:02:56 +0000
 # ************************************************************
 
 
@@ -275,6 +275,10 @@ LOCK TABLES `changedattributes` WRITE;
 
 INSERT INTO `changedattributes` (`elementId`, `siteId`, `attribute`, `dateUpdated`, `propagated`, `userId`)
 VALUES
+	(1,1,'firstName','2022-01-31 22:02:31',0,1),
+	(1,1,'lastName','2022-01-31 22:02:31',0,1),
+	(1,1,'lastPasswordChangeDate','2022-01-31 22:02:31',0,1),
+	(1,1,'password','2022-01-31 22:02:31',0,1),
 	(41,1,'slug','2022-01-29 20:58:20',0,1),
 	(41,1,'title','2022-01-29 20:58:20',0,1),
 	(44,1,'slug','2022-01-29 20:58:43',0,1),
@@ -381,7 +385,7 @@ LOCK TABLES `content` WRITE;
 
 INSERT INTO `content` (`id`, `elementId`, `siteId`, `title`, `dateCreated`, `dateUpdated`, `uid`, `field_cardAbstract_pviifqql`, `field_cardButton_yivhlchv`)
 VALUES
-	(1,1,1,NULL,'2022-01-29 20:36:14','2022-01-29 20:36:14','36d8a617-be58-42bf-980b-5390b1c6caaf',NULL,NULL),
+	(1,1,1,NULL,'2022-01-29 20:36:14','2022-01-31 22:02:30','36d8a617-be58-42bf-980b-5390b1c6caaf',NULL,NULL),
 	(2,2,1,'Homepage','2022-01-29 20:39:48','2022-01-30 22:40:09','f7504066-6efe-45cc-96c6-f58dbbd07dff',NULL,NULL),
 	(3,3,1,'Homepage','2022-01-29 20:39:48','2022-01-29 20:39:48','f8878737-8977-4882-89fa-872271f1fa95',NULL,NULL),
 	(4,4,1,'Homepage','2022-01-29 20:51:32','2022-01-29 20:51:32','c0270d6e-9384-4e6b-8f3c-94e08ffd2b6e',NULL,NULL),
@@ -545,7 +549,7 @@ LOCK TABLES `elements` WRITE;
 
 INSERT INTO `elements` (`id`, `canonicalId`, `draftId`, `revisionId`, `fieldLayoutId`, `type`, `enabled`, `archived`, `dateCreated`, `dateUpdated`, `dateLastMerged`, `dateDeleted`, `uid`)
 VALUES
-	(1,NULL,NULL,NULL,NULL,'craft\\elements\\User',1,0,'2022-01-29 20:36:14','2022-01-29 20:36:14',NULL,NULL,'b4a73b39-95ea-4057-ad4b-17276b3b70b8'),
+	(1,NULL,NULL,NULL,NULL,'craft\\elements\\User',1,0,'2022-01-29 20:36:14','2022-01-31 22:02:30',NULL,NULL,'b4a73b39-95ea-4057-ad4b-17276b3b70b8'),
 	(2,NULL,NULL,NULL,1,'craft\\elements\\Entry',1,0,'2022-01-29 20:39:48','2022-01-30 22:40:09',NULL,NULL,'f0bab61f-2b82-49c7-88d9-ca00254f717a'),
 	(3,2,NULL,1,1,'craft\\elements\\Entry',1,0,'2022-01-29 20:39:48','2022-01-29 20:39:48',NULL,NULL,'423fffce-e474-4294-b1e8-b0f69c33344f'),
 	(4,2,NULL,2,1,'craft\\elements\\Entry',1,0,'2022-01-29 20:51:32','2022-01-29 20:51:32',NULL,NULL,'614f24fe-18c1-4cb7-94ce-a92068098c19'),
@@ -3187,6 +3191,7 @@ LOCK TABLES `resourcepaths` WRITE;
 INSERT INTO `resourcepaths` (`hash`, `path`)
 VALUES
 	('153f4dc8','@craft/web/assets/iframeresizer/dist'),
+	('15986204','@app/web/assets/edituser/dist'),
 	('1702cbe7','@app/web/assets/elementresizedetector/dist'),
 	('1856a491','@app/web/assets/picturefill/dist'),
 	('1e5e447f','@craft/web/assets/d3/dist'),
@@ -3333,11 +3338,9 @@ LOCK TABLES `searchindex` WRITE;
 INSERT INTO `searchindex` (`elementId`, `attribute`, `fieldId`, `siteId`, `keywords`)
 VALUES
 	(1,'username',0,1,' admin '),
-	(1,'firstname',0,1,''),
 	(1,'lastname',0,1,''),
 	(1,'fullname',0,1,''),
-	(1,'email',0,1,' alexrees1993 googlemail com '),
-	(1,'slug',0,1,''),
+	(1,'firstname',0,1,''),
 	(34,'slug',0,1,''),
 	(35,'slug',0,1,''),
 	(2,'slug',0,1,' homepage '),
@@ -3395,7 +3398,9 @@ VALUES
 	(285,'extension',0,1,' jpeg '),
 	(285,'kind',0,1,' image '),
 	(285,'slug',0,1,''),
-	(285,'title',0,1,' verse hero 2 ');
+	(285,'title',0,1,' verse hero 2 '),
+	(1,'email',0,1,' alexrees1993 googlemail com '),
+	(1,'slug',0,1,'');
 
 /*!40000 ALTER TABLE `searchindex` ENABLE KEYS */;
 UNLOCK TABLES;
@@ -3510,6 +3515,15 @@ CREATE TABLE `sessions` (
   CONSTRAINT `fk_uraeufecdpmuqtykrzhpgdxuolherrwozdyp` FOREIGN KEY (`userId`) REFERENCES `users` (`id`) ON DELETE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
+LOCK TABLES `sessions` WRITE;
+/*!40000 ALTER TABLE `sessions` DISABLE KEYS */;
+
+INSERT INTO `sessions` (`id`, `userId`, `token`, `dateCreated`, `dateUpdated`, `uid`)
+VALUES
+	(2,1,'L1Kn63ESUQi2arG19YEArtpOd1a_TQ0YkAjC_bjGx_MpYdYTP7cY_I2YjlET8uoGv7vwlJfEzC5Rq0pAN1dx7XqKmAH8jvnE8dSv','2022-01-31 22:02:41','2022-01-31 22:02:41','9c08df9f-bec5-4457-b645-c32a2d905513');
+
+/*!40000 ALTER TABLE `sessions` ENABLE KEYS */;
+UNLOCK TABLES;
 
 
 # Dump of table shunnedmessages
@@ -4068,7 +4082,7 @@ LOCK TABLES `userpreferences` WRITE;
 
 INSERT INTO `userpreferences` (`userId`, `preferences`)
 VALUES
-	(1,'{\"language\":\"en-GB\"}');
+	(1,'{\"language\":\"en-GB\",\"locale\":null,\"weekStartDay\":\"1\",\"alwaysShowFocusRings\":false,\"useShapes\":false,\"underlineLinks\":false,\"showFieldHandles\":false,\"enableDebugToolbarForSite\":false,\"enableDebugToolbarForCp\":false,\"showExceptionView\":false,\"profileTemplates\":false}');
 
 /*!40000 ALTER TABLE `userpreferences` ENABLE KEYS */;
 UNLOCK TABLES;
@@ -4121,7 +4135,7 @@ LOCK TABLES `users` WRITE;
 
 INSERT INTO `users` (`id`, `username`, `photoId`, `firstName`, `lastName`, `email`, `password`, `admin`, `locked`, `suspended`, `pending`, `lastLoginDate`, `lastLoginAttemptIp`, `invalidLoginWindowStart`, `invalidLoginCount`, `lastInvalidLoginDate`, `lockoutDate`, `hasDashboard`, `verificationCode`, `verificationCodeIssuedDate`, `unverifiedEmail`, `passwordResetRequired`, `lastPasswordChangeDate`, `dateCreated`, `dateUpdated`, `uid`)
 VALUES
-	(1,'admin',NULL,NULL,NULL,'alexrees1993@googlemail.com','$2y$13$KZY6vmjVF85mpOzu3QX4reSFZdTWIR2mqLBuThCTXN8nBffsL8MYq',1,0,0,0,'2022-01-30 21:15:11',NULL,NULL,NULL,NULL,NULL,1,NULL,NULL,NULL,0,'2022-01-29 20:36:14','2022-01-29 20:36:14','2022-01-30 21:15:11','90098734-61f0-46f8-8aa3-450591b96d94');
+	(1,'admin',NULL,'','','alexrees1993@googlemail.com','$2y$13$X.KkXqUWnvG6YwLSm/.m1Ollj3mRhUI95iBNqgISJITv74n/WIL4C',1,0,0,0,'2022-01-31 22:02:41',NULL,NULL,NULL,'2022-01-31 22:01:57',NULL,1,NULL,NULL,NULL,0,'2022-01-31 22:02:31','2022-01-29 20:36:14','2022-01-31 22:02:41','90098734-61f0-46f8-8aa3-450591b96d94');
 
 /*!40000 ALTER TABLE `users` ENABLE KEYS */;
 UNLOCK TABLES;
