@@ -1,0 +1,79 @@
+field: 86f51cdf-0594-49d7-88cd-8cf8daddfd02 # Components
+fieldLayouts:
+  5484cb0a-57c0-4bd6-8964-329c7a8d8e29:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: b41264ca-8671-443b-876c-ca52160072e9 # Slides
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  b41264ca-8671-443b-876c-ca52160072e9: # Slides
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: slides
+    instructions: ''
+    name: Slides
+    searchable: false
+    settings:
+      columns:
+        __assoc__:
+          -
+            - 98ce7158-cb01-4c67-a1c6-0ef140775fb1 # Point
+            -
+              __assoc__:
+                -
+                  - width
+                  - ''
+          -
+            - 298ac298-c6d5-46d3-837b-f992d3053ecf # Image
+            -
+              __assoc__:
+                -
+                  - width
+                  - ''
+          -
+            - 61f629b2-0417-448a-8350-aff0bac1ec3b # Heading
+            -
+              __assoc__:
+                -
+                  - width
+                  - ''
+          -
+            - b9f2742e-ae14-4113-a183-6bd3de2cf384 # Copy
+            -
+              __assoc__:
+                -
+                  - width
+                  - ''
+          -
+            - f5c321e4-4cc3-457e-ab1a-610791af7d11 # Button
+            -
+              __assoc__:
+                -
+                  - width
+                  - ''
+      contentTable: '{{%stc_1_slides}}'
+      fieldLayout: matrix
+      maxRows: ''
+      minRows: ''
+      placeholderKey: null
+      propagationKeyFormat: null
+      propagationMethod: all
+      selectionLabel: ''
+      staticField: ''
+    translationKeyFormat: null
+    translationMethod: site
+    type: verbb\supertable\fields\SuperTableField
+handle: hero
+name: Hero
+sortOrder: 3

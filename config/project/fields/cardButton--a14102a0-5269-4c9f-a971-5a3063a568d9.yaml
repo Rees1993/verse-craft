@@ -1,0 +1,49 @@
+columnSuffix: yivhlchv
+contentColumnType: text
+fieldGroup: d4e3d852-e984-4784-af34-69145961849c # Card
+handle: cardButton
+instructions: ''
+name: Button
+searchable: false
+settings:
+  addRowLabel: 'Add a row'
+  columnType: text
+  columns:
+    __assoc__:
+      -
+        - col1
+        -
+          __assoc__:
+            -
+              - heading
+              - Text
+            -
+              - handle
+              - text
+            -
+              - width
+              - ''
+            -
+              - type
+              - singleline
+      -
+        - col2
+        -
+          __assoc__:
+            -
+              - heading
+              - Link
+            -
+              - handle
+              - link
+            -
+              - width
+              - ''
+            -
+              - type
+              - singleline
+  maxRows: '1'
+  minRows: ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Table

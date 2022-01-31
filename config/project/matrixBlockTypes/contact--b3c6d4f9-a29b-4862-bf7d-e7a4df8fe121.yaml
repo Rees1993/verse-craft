@@ -1,0 +1,41 @@
+field: 86f51cdf-0594-49d7-88cd-8cf8daddfd02 # Components
+fieldLayouts:
+  9748c455-33cf-4c29-b8f7-7e8a0710587a:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 22443ea1-187e-49b2-84c4-90598d169bf5 # Heading
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  22443ea1-187e-49b2-84c4-90598d169bf5: # Heading
+    columnSuffix: null
+    contentColumnType: text
+    fieldGroup: null
+    handle: heading
+    instructions: ''
+    name: Heading
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: contact
+name: Contact
+sortOrder: 6

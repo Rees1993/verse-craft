@@ -1,0 +1,19 @@
+columnSuffix: pviifqql
+contentColumnType: text
+fieldGroup: d4e3d852-e984-4784-af34-69145961849c # Card
+handle: cardAbstract
+instructions: ''
+name: Abstract
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: ''
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

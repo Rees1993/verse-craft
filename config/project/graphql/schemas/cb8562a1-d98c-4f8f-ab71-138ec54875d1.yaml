@@ -1,0 +1,9 @@
+isPublic: true
+name: 'Public Schema'
+scope:
+  - 'sections.56b811ad-a1bd-49ec-913d-1fe0a0e4ad46:read' # Card
+  - 'entrytypes.784f2565-57bc-455f-9ff9-484ca800e333:read' # Default
+  - 'sections.ed6307e6-38a4-472d-b6bd-609ec660cec3:read' # Homepage
+  - 'entrytypes.b5da51f5-d9b1-4ed1-8780-9c80c659891a:read' # Homepage
+  - 'volumes.c0a88e6f-7dc9-46ee-9c9f-cabe689dd5d5:read' # Components
+  - 'volumes.00ba4136-4522-4595-918d-d5c47a106881:read' # Card

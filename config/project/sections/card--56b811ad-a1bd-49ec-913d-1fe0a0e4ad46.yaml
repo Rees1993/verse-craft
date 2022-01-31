@@ -1,0 +1,12 @@
+defaultPlacement: end
+enableVersioning: true
+handle: card
+name: Card
+propagationMethod: all
+siteSettings:
+  06c04a9c-5709-4012-b643-be89edbaf6d2: # Verse
+    enabledByDefault: true
+    hasUrls: false
+    template: null
+    uriFormat: null
+type: channel

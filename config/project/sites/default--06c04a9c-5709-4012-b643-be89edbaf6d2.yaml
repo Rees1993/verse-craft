@@ -1,0 +1,8 @@
+baseUrl: $PRIMARY_SITE_URL
+handle: default
+hasUrls: true
+language: en-GB
+name: Verse
+primary: true
+siteGroup: 7388ec92-49aa-477e-8f0d-18d09b43f38b # Verse
+sortOrder: 1

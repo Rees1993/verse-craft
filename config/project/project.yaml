@@ -1,0 +1,79 @@
+dateModified: 1643658249
+email:
+  fromEmail: alexrees1993@googlemail.com
+  fromName: Verse
+  transportType: craft\mail\transportadapters\Sendmail
+meta:
+  __names__:
+    00ba4136-4522-4595-918d-d5c47a106881: Card # Card
+    0c37405b-1568-48a8-b355-7c0388e76a43: Heading # Heading
+    1bd75347-c828-488f-8b65-2b5ece47b5e1: Button # Button
+    5c506142-7e92-44a4-80d4-e3141c44deb1: Abstract # Abstract
+    06c04a9c-5709-4012-b643-be89edbaf6d2: Verse # Verse
+    7c525289-a105-41be-91cb-e05e450b1367: Heading # Heading
+    8bab4a25-1ca5-43a3-946f-7eb03bcd5d36: Copy # Copy
+    8ccccc07-e07b-4c7e-8056-68a3a2a564d8: Cards # Cards
+    8cd78bca-66f0-4c7e-9a9d-b10f5e81ea6e: Button # Button
+    37f099e0-9846-469f-a4e3-abba7e1bbf61: Button # Button
+    56b811ad-a1bd-49ec-913d-1fe0a0e4ad46: Card # Card
+    61f629b2-0417-448a-8350-aff0bac1ec3b: Heading # Heading
+    86f51cdf-0594-49d7-88cd-8cf8daddfd02: Components # Components
+    98ce7158-cb01-4c67-a1c6-0ef140775fb1: Point # Point
+    197e98b2-1cd3-4fe4-b1a0-5180c12064d9: 'Verse Schema' # Verse Schema
+    298ac298-c6d5-46d3-837b-f992d3053ecf: Image # Image
+    348dbe41-4699-43c4-aa30-5a9e894bb750: Heading # Heading
+    388af34e-6bb7-471c-a169-42bbf595ebd2: Image # Image
+    702d9892-92f3-4ebd-92eb-d3ce59d96b2d: Heading # Heading
+    784f0689-cbe8-44df-97a8-b2b7edb9d2f9: Button # Button
+    784f2565-57bc-455f-9ff9-484ca800e333: Default # Default
+    7388ec92-49aa-477e-8f0d-18d09b43f38b: Verse # Verse
+    9983f131-2c73-48e5-a123-879d42e1be5d: Entries # Entries
+    22443ea1-187e-49b2-84c4-90598d169bf5: Heading # Heading
+    503608ce-5321-4dcc-b1a4-68d5b8f0fbcf: Hero # Hero
+    951145e5-8882-4843-9e23-ce508b0f9c44: Image # Image
+    a620e457-98d6-426e-88c2-d0278e5b8fb2: Copy # Copy
+    a14102a0-5269-4c9f-a971-5a3063a568d9: Button # Button
+    b3c6d4f9-a29b-4862-bf7d-e7a4df8fe121: Contact # Contact
+    b5da51f5-d9b1-4ed1-8780-9c80c659891a: Homepage # Homepage
+    b9f2742e-ae14-4113-a183-6bd3de2cf384: Copy # Copy
+    b41264ca-8671-443b-876c-ca52160072e9: Slides # Slides
+    badbce7d-5fea-44f2-871f-66b5597ee650: Abstract # Abstract
+    c0a88e6f-7dc9-46ee-9c9f-cabe689dd5d5: Components # Components
+    c39ba9f1-bb52-4d48-a6ff-70bd8a69dcc4: 'Call to Action' # Call to Action
+    cb8562a1-d98c-4f8f-ab71-138ec54875d1: 'Public Schema' # Public Schema
+    d0a3a7bc-42c3-4290-832c-467cade4d237: Copy # Copy
+    d3ff529d-f0b8-4b6d-a8a6-987dd86d4e24: Common # Common
+    d4e3d852-e984-4784-af34-69145961849c: Card # Card
+    dfe86b4e-eb76-4daa-ac3d-2750861ab479: Abstract # Abstract
+    ed04d794-983e-4ce4-acd7-d9f624be015b: 'Get In Touch' # Get In Touch
+    ed6307e6-38a4-472d-b6bd-609ec660cec3: Homepage # Homepage
+    f5c321e4-4cc3-457e-ab1a-610791af7d11: Button # Button
+    f17b5a6d-0d50-4627-a8c1-a2555dd9d2c7: 'Copy with Image' # Copy with Image
+    f7946b18-b82b-45f0-8a76-efdba41894bd: Heading # Heading
+    fa3b9545-6fb6-4912-b982-a1031b5b0a53: Points # Points
+    fe126841-dabc-4168-8e73-d14cf3293ebf: Thumbnail # Thumbnail
+plugins:
+  element-api:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  redactor:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.3.0
+  super-table:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.2.1
+system:
+  edition: pro
+  live: true
+  name: Verse
+  schemaVersion: 3.7.8
+  timeZone: America/Los_Angeles
+users:
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoSubpath: null
+  photoVolumeUid: null
+  requireEmailVerification: true
