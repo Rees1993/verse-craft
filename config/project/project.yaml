@@ -1,4 +1,4 @@
-dateModified: 1643658249
+dateModified: 1643707447
 email:
   fromEmail: alexrees1993@googlemail.com
   fromName: Verse
@@ -19,7 +19,6 @@ meta:
     61f629b2-0417-448a-8350-aff0bac1ec3b: Heading # Heading
     86f51cdf-0594-49d7-88cd-8cf8daddfd02: Components # Components
     98ce7158-cb01-4c67-a1c6-0ef140775fb1: Point # Point
-    197e98b2-1cd3-4fe4-b1a0-5180c12064d9: 'Verse Schema' # Verse Schema
     298ac298-c6d5-46d3-837b-f992d3053ecf: Image # Image
     348dbe41-4699-43c4-aa30-5a9e894bb750: Heading # Heading
     388af34e-6bb7-471c-a169-42bbf595ebd2: Image # Image
@@ -29,6 +28,7 @@ meta:
     7388ec92-49aa-477e-8f0d-18d09b43f38b: Verse # Verse
     9983f131-2c73-48e5-a123-879d42e1be5d: Entries # Entries
     22443ea1-187e-49b2-84c4-90598d169bf5: Heading # Heading
+    268674e8-5a06-4a63-9604-27e45158a894: 'Verse Schema' # Verse Schema
     503608ce-5321-4dcc-b1a4-68d5b8f0fbcf: Hero # Hero
     951145e5-8882-4843-9e23-ce508b0f9c44: Image # Image
     a620e457-98d6-426e-88c2-d0278e5b8fb2: Copy # Copy

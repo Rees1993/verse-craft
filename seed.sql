@@ -7,7 +7,7 @@
 #
 # Host: 127.0.0.01 (MySQL 5.7.36)
 # Database: verse
-# Generation Time: 2022-01-31 22:02:56 +0000
+# Generation Time: 2022-02-01 09:27:03 +0000
 # ************************************************************
 
 
@@ -1362,7 +1362,8 @@ LOCK TABLES `gqlschemas` WRITE;
 
 INSERT INTO `gqlschemas` (`id`, `name`, `scope`, `isPublic`, `dateCreated`, `dateUpdated`, `uid`)
 VALUES
-	(1,'Public Schema','[\"sections.56b811ad-a1bd-49ec-913d-1fe0a0e4ad46:read\",\"entrytypes.784f2565-57bc-455f-9ff9-484ca800e333:read\",\"sections.ed6307e6-38a4-472d-b6bd-609ec660cec3:read\",\"entrytypes.b5da51f5-d9b1-4ed1-8780-9c80c659891a:read\",\"volumes.c0a88e6f-7dc9-46ee-9c9f-cabe689dd5d5:read\",\"volumes.00ba4136-4522-4595-918d-d5c47a106881:read\"]',1,'2022-01-29 21:01:15','2022-01-29 21:01:36','cb8562a1-d98c-4f8f-ab71-138ec54875d1');
+	(1,'Public Schema','[\"sections.56b811ad-a1bd-49ec-913d-1fe0a0e4ad46:read\",\"entrytypes.784f2565-57bc-455f-9ff9-484ca800e333:read\",\"sections.ed6307e6-38a4-472d-b6bd-609ec660cec3:read\",\"entrytypes.b5da51f5-d9b1-4ed1-8780-9c80c659891a:read\",\"volumes.c0a88e6f-7dc9-46ee-9c9f-cabe689dd5d5:read\",\"volumes.00ba4136-4522-4595-918d-d5c47a106881:read\"]',1,'2022-01-29 21:01:15','2022-01-29 21:01:36','cb8562a1-d98c-4f8f-ab71-138ec54875d1'),
+	(2,'Verse Schema','[\"sections.56b811ad-a1bd-49ec-913d-1fe0a0e4ad46:read\",\"entrytypes.784f2565-57bc-455f-9ff9-484ca800e333:read\",\"sections.ed6307e6-38a4-472d-b6bd-609ec660cec3:read\",\"entrytypes.b5da51f5-d9b1-4ed1-8780-9c80c659891a:read\",\"volumes.c0a88e6f-7dc9-46ee-9c9f-cabe689dd5d5:read\",\"volumes.00ba4136-4522-4595-918d-d5c47a106881:read\"]',0,'2022-02-01 09:22:54','2022-02-01 09:22:54','268674e8-5a06-4a63-9604-27e45158a894');
 
 /*!40000 ALTER TABLE `gqlschemas` ENABLE KEYS */;
 UNLOCK TABLES;
@@ -1396,7 +1397,8 @@ LOCK TABLES `gqltokens` WRITE;
 
 INSERT INTO `gqltokens` (`id`, `name`, `accessToken`, `enabled`, `expiryDate`, `lastUsed`, `schemaId`, `dateCreated`, `dateUpdated`, `uid`)
 VALUES
-	(1,'Public Token','__PUBLIC__',1,NULL,NULL,1,'2022-01-29 21:01:15','2022-01-29 21:01:15','70af5216-5a70-4e78-9334-85f7ef59a11c');
+	(1,'Public Token','__PUBLIC__',1,NULL,NULL,1,'2022-01-29 21:01:15','2022-01-29 21:01:15','70af5216-5a70-4e78-9334-85f7ef59a11c'),
+	(2,'Verse Token','HnbNZZqLcTvlXmV1tFQWH44jHV96zR9u',1,NULL,NULL,2,'2022-02-01 09:20:37','2022-02-01 09:24:02','955bb496-afc0-4e0d-91d5-8524e6f87fee');
 
 /*!40000 ALTER TABLE `gqltokens` ENABLE KEYS */;
 UNLOCK TABLES;
@@ -1425,7 +1427,7 @@ LOCK TABLES `info` WRITE;
 
 INSERT INTO `info` (`id`, `version`, `schemaVersion`, `maintenance`, `configVersion`, `fieldVersion`, `dateCreated`, `dateUpdated`, `uid`)
 VALUES
-	(1,'3.7.30.1','3.7.8',0,'zljjyytqndlu','2@vlkcrxypch','2022-01-29 20:36:13','2022-01-30 22:52:06','e9454be7-c215-498e-92be-44bdf7fb8f9e');
+	(1,'3.7.30.1','3.7.8',0,'jcdpobbkqnkt','2@vlkcrxypch','2022-01-29 20:36:13','2022-02-01 09:24:07','e9454be7-c215-498e-92be-44bdf7fb8f9e');
 
 /*!40000 ALTER TABLE `info` ENABLE KEYS */;
 UNLOCK TABLES;
@@ -2018,9 +2020,9 @@ LOCK TABLES `plugins` WRITE;
 
 INSERT INTO `plugins` (`id`, `handle`, `version`, `schemaVersion`, `licenseKeyStatus`, `licensedEdition`, `installDate`, `dateCreated`, `dateUpdated`, `uid`)
 VALUES
-	(1,'redactor','2.8.8','2.3.0','unknown',NULL,'2022-01-29 20:40:28','2022-01-29 20:40:28','2022-01-30 22:39:51','178475f2-da49-4fd0-bbe7-641678d029dd'),
-	(2,'element-api','2.8.4','1.0.0','unknown',NULL,'2022-01-30 21:08:52','2022-01-30 21:08:53','2022-01-30 22:39:51','56b8d07b-07c9-4fba-8a30-2c51644349db'),
-	(3,'super-table','2.7.1','2.2.1','unknown',NULL,'2022-01-30 21:36:31','2022-01-30 21:36:31','2022-01-30 22:39:51','b5dac83e-cad7-4f70-85ab-b1f24f4bdc3d');
+	(1,'redactor','2.8.8','2.3.0','unknown',NULL,'2022-01-29 20:40:28','2022-01-29 20:40:28','2022-02-01 09:19:23','178475f2-da49-4fd0-bbe7-641678d029dd'),
+	(2,'element-api','2.8.4','1.0.0','unknown',NULL,'2022-01-30 21:08:52','2022-01-30 21:08:53','2022-02-01 09:19:23','56b8d07b-07c9-4fba-8a30-2c51644349db'),
+	(3,'super-table','2.7.1','2.2.1','unknown',NULL,'2022-01-30 21:36:31','2022-01-30 21:36:31','2022-02-01 09:19:23','b5dac83e-cad7-4f70-85ab-b1f24f4bdc3d');
 
 /*!40000 ALTER TABLE `plugins` ENABLE KEYS */;
 UNLOCK TABLES;
@@ -2042,7 +2044,7 @@ LOCK TABLES `projectconfig` WRITE;
 
 INSERT INTO `projectconfig` (`path`, `value`)
 VALUES
-	('dateModified','1643583126'),
+	('dateModified','1643707447'),
 	('email.fromEmail','\"alexrees1993@googlemail.com\"'),
 	('email.fromName','\"Verse\"'),
 	('email.transportType','\"craft\\\\mail\\\\transportadapters\\\\Sendmail\"'),
@@ -2242,6 +2244,14 @@ VALUES
 	('fields.fe126841-dabc-4168-8e73-d14cf3293ebf.type','\"craft\\\\fields\\\\Assets\"'),
 	('graphql.publicToken.enabled','true'),
 	('graphql.publicToken.expiryDate','null'),
+	('graphql.schemas.268674e8-5a06-4a63-9604-27e45158a894.isPublic','false'),
+	('graphql.schemas.268674e8-5a06-4a63-9604-27e45158a894.name','\"Verse Schema\"'),
+	('graphql.schemas.268674e8-5a06-4a63-9604-27e45158a894.scope.0','\"sections.56b811ad-a1bd-49ec-913d-1fe0a0e4ad46:read\"'),
+	('graphql.schemas.268674e8-5a06-4a63-9604-27e45158a894.scope.1','\"entrytypes.784f2565-57bc-455f-9ff9-484ca800e333:read\"'),
+	('graphql.schemas.268674e8-5a06-4a63-9604-27e45158a894.scope.2','\"sections.ed6307e6-38a4-472d-b6bd-609ec660cec3:read\"'),
+	('graphql.schemas.268674e8-5a06-4a63-9604-27e45158a894.scope.3','\"entrytypes.b5da51f5-d9b1-4ed1-8780-9c80c659891a:read\"'),
+	('graphql.schemas.268674e8-5a06-4a63-9604-27e45158a894.scope.4','\"volumes.c0a88e6f-7dc9-46ee-9c9f-cabe689dd5d5:read\"'),
+	('graphql.schemas.268674e8-5a06-4a63-9604-27e45158a894.scope.5','\"volumes.00ba4136-4522-4595-918d-d5c47a106881:read\"'),
 	('graphql.schemas.cb8562a1-d98c-4f8f-ab71-138ec54875d1.isPublic','true'),
 	('graphql.schemas.cb8562a1-d98c-4f8f-ab71-138ec54875d1.name','\"Public Schema\"'),
 	('graphql.schemas.cb8562a1-d98c-4f8f-ab71-138ec54875d1.scope.0','\"sections.56b811ad-a1bd-49ec-913d-1fe0a0e4ad46:read\"'),
@@ -2680,6 +2690,7 @@ VALUES
 	('meta.__names__.0c37405b-1568-48a8-b355-7c0388e76a43','\"Heading\"'),
 	('meta.__names__.1bd75347-c828-488f-8b65-2b5ece47b5e1','\"Button\"'),
 	('meta.__names__.22443ea1-187e-49b2-84c4-90598d169bf5','\"Heading\"'),
+	('meta.__names__.268674e8-5a06-4a63-9604-27e45158a894','\"Verse Schema\"'),
 	('meta.__names__.298ac298-c6d5-46d3-837b-f992d3053ecf','\"Image\"'),
 	('meta.__names__.348dbe41-4699-43c4-aa30-5a9e894bb750','\"Heading\"'),
 	('meta.__names__.37f099e0-9846-469f-a4e3-abba7e1bbf61','\"Button\"'),
@@ -2752,6 +2763,7 @@ VALUES
 	('sections.ed6307e6-38a4-472d-b6bd-609ec660cec3.type','\"single\"'),
 	('siteGroups.7388ec92-49aa-477e-8f0d-18d09b43f38b.name','\"Verse\"'),
 	('sites.06c04a9c-5709-4012-b643-be89edbaf6d2.baseUrl','\"$PRIMARY_SITE_URL\"'),
+	('sites.06c04a9c-5709-4012-b643-be89edbaf6d2.enabled','true'),
 	('sites.06c04a9c-5709-4012-b643-be89edbaf6d2.handle','\"default\"'),
 	('sites.06c04a9c-5709-4012-b643-be89edbaf6d2.hasUrls','true'),
 	('sites.06c04a9c-5709-4012-b643-be89edbaf6d2.language','\"en-GB\"'),
@@ -2968,7 +2980,7 @@ VALUES
 	('volumes.00ba4136-4522-4595-918d-d5c47a106881.settings.path','\"@webroot/images/components\"'),
 	('volumes.00ba4136-4522-4595-918d-d5c47a106881.sortOrder','2'),
 	('volumes.00ba4136-4522-4595-918d-d5c47a106881.titleTranslationKeyFormat','null'),
-	('volumes.00ba4136-4522-4595-918d-d5c47a106881.titleTranslationMethod','null'),
+	('volumes.00ba4136-4522-4595-918d-d5c47a106881.titleTranslationMethod','\"site\"'),
 	('volumes.00ba4136-4522-4595-918d-d5c47a106881.type','\"craft\\\\volumes\\\\Local\"'),
 	('volumes.00ba4136-4522-4595-918d-d5c47a106881.url','\"@web/images/components\"'),
 	('volumes.c0a88e6f-7dc9-46ee-9c9f-cabe689dd5d5.fieldLayouts.a4e559fd-26cd-4ea8-8173-1221b6746273.tabs.0.elements.0.autocapitalize','true'),
@@ -3001,7 +3013,7 @@ VALUES
 	('volumes.c0a88e6f-7dc9-46ee-9c9f-cabe689dd5d5.settings.path','\"@webroot/images/components\"'),
 	('volumes.c0a88e6f-7dc9-46ee-9c9f-cabe689dd5d5.sortOrder','1'),
 	('volumes.c0a88e6f-7dc9-46ee-9c9f-cabe689dd5d5.titleTranslationKeyFormat','null'),
-	('volumes.c0a88e6f-7dc9-46ee-9c9f-cabe689dd5d5.titleTranslationMethod','null'),
+	('volumes.c0a88e6f-7dc9-46ee-9c9f-cabe689dd5d5.titleTranslationMethod','\"site\"'),
 	('volumes.c0a88e6f-7dc9-46ee-9c9f-cabe689dd5d5.type','\"craft\\\\volumes\\\\Local\"'),
 	('volumes.c0a88e6f-7dc9-46ee-9c9f-cabe689dd5d5.url','\"@web/images/components\"');
 
@@ -3520,7 +3532,8 @@ LOCK TABLES `sessions` WRITE;
 
 INSERT INTO `sessions` (`id`, `userId`, `token`, `dateCreated`, `dateUpdated`, `uid`)
 VALUES
-	(2,1,'L1Kn63ESUQi2arG19YEArtpOd1a_TQ0YkAjC_bjGx_MpYdYTP7cY_I2YjlET8uoGv7vwlJfEzC5Rq0pAN1dx7XqKmAH8jvnE8dSv','2022-01-31 22:02:41','2022-01-31 22:02:41','9c08df9f-bec5-4457-b645-c32a2d905513');
+	(4,1,'a6TX43CLRp0wNUfM1ZiviorAe515f18faNtTclFp5S5LX4ypR85MxBHZ3XOPZRCe6p7AA23PeuEjYJ7U9-flcNdh6MoyLWXFAwU8','2022-02-01 09:12:26','2022-02-01 09:13:55','f3628fdd-ff5f-446f-b993-5296f060c7d0'),
+	(5,1,'TvsJGBGKy1bgFf8iAf8AkE_C8uUhjp4LRx-XSBKyTmMjonnfChygiFloPAc4kMfZsjU39TWoUzZb4tceZF4EZg1qsRuinEUW9QYr','2022-02-01 09:19:12','2022-02-01 09:26:58','4a10bcfc-6dd1-4459-80c6-bbcca402da50');
 
 /*!40000 ALTER TABLE `sessions` ENABLE KEYS */;
 UNLOCK TABLES;
@@ -4135,7 +4148,7 @@ LOCK TABLES `users` WRITE;
 
 INSERT INTO `users` (`id`, `username`, `photoId`, `firstName`, `lastName`, `email`, `password`, `admin`, `locked`, `suspended`, `pending`, `lastLoginDate`, `lastLoginAttemptIp`, `invalidLoginWindowStart`, `invalidLoginCount`, `lastInvalidLoginDate`, `lockoutDate`, `hasDashboard`, `verificationCode`, `verificationCodeIssuedDate`, `unverifiedEmail`, `passwordResetRequired`, `lastPasswordChangeDate`, `dateCreated`, `dateUpdated`, `uid`)
 VALUES
-	(1,'admin',NULL,'','','alexrees1993@googlemail.com','$2y$13$X.KkXqUWnvG6YwLSm/.m1Ollj3mRhUI95iBNqgISJITv74n/WIL4C',1,0,0,0,'2022-01-31 22:02:41',NULL,NULL,NULL,'2022-01-31 22:01:57',NULL,1,NULL,NULL,NULL,0,'2022-01-31 22:02:31','2022-01-29 20:36:14','2022-01-31 22:02:41','90098734-61f0-46f8-8aa3-450591b96d94');
+	(1,'admin',NULL,'','','alexrees1993@googlemail.com','$2y$13$X.KkXqUWnvG6YwLSm/.m1Ollj3mRhUI95iBNqgISJITv74n/WIL4C',1,0,0,0,'2022-02-01 09:19:12',NULL,NULL,NULL,'2022-01-31 22:01:57',NULL,1,NULL,NULL,NULL,0,'2022-01-31 22:02:31','2022-01-29 20:36:14','2022-02-01 09:19:12','90098734-61f0-46f8-8aa3-450591b96d94');
 
 /*!40000 ALTER TABLE `users` ENABLE KEYS */;
 UNLOCK TABLES;
